@@ -1,8 +1,8 @@
 {
   "name": "friendly-reminder",
-  "version": "1.0.3",
+  "version": "1.0.9",
   "description": "A simple terminal reminder tool",
-  "main": "index.js",
+  "type": "module",
   "bin": {
     "friendly-reminder": "index.js"
   },
@@ -12,6 +12,7 @@
   "author": "Chathumal Sangeeth",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.0.0",
     "date-fns": "^3.6.0"
   },
   "keywords": [
