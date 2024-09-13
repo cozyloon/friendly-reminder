@@ -19,24 +19,24 @@ npm install -g friendly-reminder
 ```
 
 ## Usage
-Run the friendly-reminder command in your terminal to start receiving reminders. By default, reminders appear every 1 hour (3600000 milliseconds).
+Run the friendly-reminder command in your terminal to start receiving reminders. By default, reminders appear every 1 hour (60 minutes).
 
 ```bash
 friendly-reminder
 ```
 
 ## Custom Interval
-You can pass a custom interval (in milliseconds) to the command. For example, to set a reminder every 10 minutes (600000 milliseconds):
+You can pass a custom interval (in minutes) to the command. For example, to set a reminder every 10 minutes:
 
 ```bash
-friendly-reminder 600000
+friendly-reminder 10
 ```
 
 ## Example
 Run the following command for reminders every 15 minutes:
 
 ```bash
-friendly-reminder 900000
+friendly-reminder 15
 ```
 
 This will output reminders like:
