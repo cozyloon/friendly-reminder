@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/friendly-reminder.svg)](https://www.npmjs.com/package/friendly-reminder)
 
-**Friendly Reminder** is a simple command-line tool that displays random motivational or self-care reminders at regular intervals in your terminal. Use it to stay productive and mindful while you work!
+**Friendly Reminder** is a simple command-line tool that displays random motivational or self-care reminders at regular intervals in your terminal and desktop notifications. Use it to stay productive and mindful while you work!
 
 ## Features
 
