@@ -2,6 +2,7 @@
 
 import { format } from 'date-fns';
 import chalk from 'chalk';
+import notifier from 'node-notifier';
 
 // List of friendly reminder messages
 const reminderMessages = [
@@ -38,7 +39,13 @@ const showReminder = (interval) => {
     console.log(chalk.green(`Friendly Reminder initialized. Reminders will appear every ${interval} minutes.`));
     setInterval(() => {
         const time = format(new Date(), 'HH:mm:ss');
-        console.log(chalk.green(`[${time}] ${getRandomMessage()}`));
+        const message = getRandomMessage();
+        console.log(chalk.green(`[${time}] ${message}`));
+        notifier.notify({
+            title: 'Friendly Reminder',
+            message: message,
+            sound: true, // Play sound with the notification
+        });
     }, interval * 60 * 1000); // Convert minutes to milliseconds
 };
 
